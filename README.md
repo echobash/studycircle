@@ -1,2 +1,0 @@
-# studycircle
-Study Circle
