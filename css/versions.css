@@ -259,6 +259,13 @@ body.host_version .first-section {
 	background-size: cover;
 }
 
+@media only screen and (max-width: 360px) {
+    body.host_version .first-section {
+        background-size: contain !important; /* Change background size to contain for smaller screens */
+	    background-repeat:no-repeat !important;
+    }
+}
+
 body.host_version .first-section h2 {
     padding-bottom: 15px;
 }
