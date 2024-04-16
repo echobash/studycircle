@@ -733,6 +733,24 @@ a img.aligncenter {
 	opacity: 1;
 }
 
+@media screen and (max-width: 520px){
+    .box-slider .carousel-control-next{
+        top: 45%;
+        width: 25px;
+        height: 25px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .box-slider .carousel-control-prev{
+        top: 45%;
+        width: 27px;
+        height: 25px;
+        font-size: 25px;
+    }
+}
+
 .first-section .big-tagline a{
 	background: none;
 	position: relative;
@@ -3874,16 +3892,14 @@ a.link-style3 {
 
 
 
-/* Default styling */
-.first-section {
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
 
-/* Media query for mobile devices */
-@media only screen and (max-width: 775px) {
-    .first-section {
-        background-size: contain !important; /* Change background size to contain for smaller screens */
-    }
-}
+
+
+
+
+
+
+
+
+
+
