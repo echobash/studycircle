@@ -36,7 +36,27 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+<style>
+        /* Hide the video on mobile devices by default */
+        @media (max-width: 768px) {
+            #pc {
+                display: none;
+            }
+            #mobile {
+                display: block;
+            }
+        }
+    
+        /* Show the video on devices with larger screens */
+        @media (min-width: 769px) {
+            #pc {
+                display: block;
+            }
+            #mobile {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body class="host_version"> 
 
@@ -140,12 +160,17 @@
 		</nav>
 	</header>
 	<!-- End header -->
-	<div style="text-align: center;">
+	<div style="text-align: center;" id="pc" style="display: none;">
         <video autoplay loop muted id="video-background" style="width: 75%; margin-top: 20px;">
             <source src="videos/studycircle.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-
+    </div>
+    <div style="text-align: center;" id="mobile" style="display: none;">
+        <video autoplay loop muted id="video-background" style="width: 75%; margin-top: 20px;">
+            <source src="videos/studycirclemobile.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
     <!-- ALL JS FILES -->
     <script src="js/all.js"></script>
