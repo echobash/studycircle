@@ -9,8 +9,6 @@
 -------------------------------------------------------------------*/
 
 @import url(css/animate.css);
-
-
 @import url(css/animate.min.css);
 @import url(css/bootstrap-touch-slider.css);
 @import url(css/flaticon.css);
@@ -721,6 +719,10 @@ a img.aligncenter {
 	height: 60px;
 	line-height: 20px;
 	opacity: 1;
+    animation: pulse 1.5s infinite alternate ease-in-out;
+    border: 2px solid #eea412; /* Initial border color */
+    transition: border-color 0.5s; /* Border color transition */
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); /* Initial box-shadow (transparent) */
 }
 .box-slider .carousel-control-next{
 	border-radius: 2px;
@@ -733,6 +735,37 @@ a img.aligncenter {
 	height: 60px;
 	line-height: 20px;
 	opacity: 1;
+    animation: pulse 1.5s infinite alternate ease-in-out;
+    border: 2px solid #eea412; /* Initial border color */
+    transition: border-color 0.5s; /* Border color transition */
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); /* Initial box-shadow (transparent) */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    25% {
+        transform: scale(1.05);
+        border-color: #fff; /* Border color at 25% */
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3); /* Box shadow color at 25% */
+    }
+    50% {
+        transform: scale(1.2);
+        border-color: #eea412; /* Border color at 50% */
+        box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); /* Box shadow color at 50% */
+    }
+    75% {
+        transform: scale(1.05);
+        border-color: #fff; /* Border color at 75% */
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3); /* Box shadow color at 75% */
+    }
+    100% {
+        transform: scale(1);
+        border-color: #eea412; /* Final border color */
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
 }
 
 @media screen and (max-width: 520px){
