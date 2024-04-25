@@ -2897,7 +2897,9 @@ body.host_version .first-section .effect-1.slide-btn::after{
 
 /**-------------- inner Page css ---------------**/
 
-
+.gradient-background {
+    background: linear-gradient(to bottom, #296186, #34859B);
+}
 
 span.m_1 {
     font-weight: 300;
